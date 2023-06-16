@@ -1,0 +1,15 @@
+{% extends 'core/base.html' %}
+{% block content %}
+<div class="row project">  	
+    <h1>{{article.title}}</h1>
+    <div class="col-lg-3 col-md-4 offset-lg-1">
+        <img class="img-fluid" src="{{article.image.url}}" alt="">
+    </div>
+    <p>{{article.content}}</p>
+</div>
+
+
+
+{% endblock content %}
+
+

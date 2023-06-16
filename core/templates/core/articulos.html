@@ -1,0 +1,18 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block content %}
+{% for article in articles  %}
+
+    <div class="row project">  	
+        <div class="col-lg-3 col-md-4 offset-lg-1">
+            <img class="img-fluid" src="{{article.image.url}}" alt="">
+        </div>
+        <div class="col-lg-7 col-md-8">
+        <h2 class="section-heading title">{{article.title}}</h2>   
+        <p>{{article.description}}</p>
+            <p><a href="content/{{article.id}}/">Más información</a></p>
+        </div>
+    </div>
+
+{% endfor %}
+{% endblock content %}
